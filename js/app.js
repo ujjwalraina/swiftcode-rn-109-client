@@ -136,4 +136,8 @@ var URL = "http://betsol.org:9000/";app.config(function($routeProvider){
              console.log(data);
            });
        }
+       $scope.logout = function(){
+         sessionStorage.clear();
+         $location.path("/login");
+       }
  }]);
